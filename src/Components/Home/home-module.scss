@@ -55,11 +55,13 @@ video {
 }
 
 .cardDiv {
+    display: grid;
     position: relative;
     padding: 2rem 1rem;
     background: var(--whiteColor);
     border-radius: 10px;
     gap: 1rem;
+
 }
 
 label {
@@ -150,15 +152,16 @@ span {
 }
 
 @media  screen and (min-width: 500px) {
-    .home,.homeContent,.textDiv,.smallText {
+    .smallText {
         font-size: 16px;
     }
-    .home,.homeTitle {
+    .homeTitle {
         position: relative;
         font-size: 2.3rem;
         width: max-content;
     }
-    .home,.homeTitle::after {
+
+    .homeTitle::after {
         position: absolute;
         content: "";
         background: var(--SecondaryColor);
@@ -168,13 +171,16 @@ span {
         bottom: 5px;
         z-index: -1;
     }
+
     .cardDiv {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns: repeat(2,1fr);
     }
+
 }
 
 @media  screen and (min-width: 660px) {
-    .home,.homeContent,.cardDiv {
+    .cardDiv {
         padding: 2rem 1rem;
         grid-template-columns: repeat(3,1fr);
     }
@@ -206,5 +212,8 @@ span {
     .input {
         margin-bottom: 1rem;
     }
-
+    .searchOptions {
+        bottom: -1rem;
+        padding: 8px 1rem;
+    }
 }
