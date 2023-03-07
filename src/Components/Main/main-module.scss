@@ -1,0 +1,120 @@
+.main {
+  width: 100%;
+}
+  .title {
+    position: relative;
+    width: max-content;
+    color: var(--textColor);
+    margin: 1rem 0;
+    z-index: 2;
+  }
+  .title::after {
+        position: absolute;
+        content: '';
+        background: var(--SecondaryColor);
+        height: 5px;
+      width: 120px;
+      right: 0;
+      bottom: 5px;
+      z-index: -1;
+      }
+
+.icon {
+    color: black;
+}
+
+.secContent{
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    background: var(--cardBg);
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.54);
+    overflow: hidden;
+}
+
+.secContent:hover {
+    background: #b8b8ef;
+    box-shadow: 1px 4px 4px rgba(140, 140, 141, 0.549);
+    transition: .3s ease;
+}
+.imageDiv {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.cardInfo {
+    padding: 1rem;
+}
+
+.destTitle {
+    color: var(--blackColor);
+    font-size: 1.25rem;
+}
+
+.continent {
+    gap: .5rem;
+}
+
+.icon_item {
+    color: black;
+    font-size: 18px;
+    align-self: center;
+}
+
+.name {
+    color: var(--textColor);
+    font-weight: 400;
+    font-size: 4px;
+}
+
+.fees {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-top: 2px solid var(--greyText);
+    border-bottom: 2px solid var(--greyText);
+
+}
+
+small {
+    text-align: center;
+    background: var(--gradientColor);
+    border-radius: 1rem;
+    color: var(--whiteColor);
+    padding: 1px 10px;
+    font-size: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    color: var(--blackColor);
+}
+
+.desc {
+    font-size: 14px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 1rem;
+    color: var(--whiteColor);
+    font-weight: 600;
+    justify-content: space-between;
+    gap: .5rem;
+}
